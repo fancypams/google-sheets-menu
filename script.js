@@ -4,7 +4,30 @@ var beerMenu = Handlebars.compile($('#beer-menu').html());
 
 $('#bol-menu').sheetrock({
   url: spreadsheet,
-  query: "select A,B,C,D,E,F,G",
+  query: "select B,C,D,E,F,G,H where A = 'Section 1'",
   fetchSize: 10,
   rowTemplate: beerMenu
+});
+
+$('#bol-menu-1').sheetrock({
+  url: spreadsheet,
+  query: "select B,C,D,E,F,G,H where A = 'Section 2'",
+  fetchSize: 10,
+  rowTemplate: beerMenu
+});
+
+$('#bol-menu-2').sheetrock({
+  url: spreadsheet,
+  query: "select B,C,D,E,F,G,H where A = 'Section 3'",
+  num: 21,
+  fetchSize: 10,
+  rowTemplate: beerMenu
+});
+
+$('#bol-menu-3').sheetrock({
+  url: spreadsheet,
+  query: "select B,C,D,E,F,G,H where A = 'Section 4'",
+  fetchSize: 10,
+  rowTemplate: beerMenu,
+  num: 31
 });

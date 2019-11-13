@@ -9,36 +9,130 @@
 
 </head>
 <body>
+<div class="menu-wrapper">
+  <div id="bol-menu" class="bol-menu">
+    <div class="flex-display header-row">
+      <h4 class="col-1 num">No.</h4>
+      <h4 class="col-2 beer">Beer</h4>
+      <h4 class="col-3 price">5 oz.</h4>
+      <h4 class="col-4 price">10 oz.</h4>
+      <h4 class="col-5 price">16 oz.</h4>
+    </div>
 
-<div id="bol-menu" class="bol-menu">
-  <div class="flex-display header-row">
-    <h4 class="col-1">No.</h4>
-    <h4 class="col-2">Beer</h4>
-    <h4 class="col-3">5 oz.</h4>
-    <h4 class="col-4">10 oz.</h4>
-    <h4 class="col-5">16 oz.</h4>
+    <script id="beer-menu" type="text/x-handlebars-template">
+        <div class="bol-table flex-display">
+          <div class="col-1 num">
+            {{cells.No}}
+          </div>
+          <div class="col-2 beer">
+            {{cells.Beer}}<br />
+            <h5>{{cells.Type}} {{cells.ABV}}</h5>
+          </div>
+          <div class="col-3 price">
+            {{cells.5oz}}
+          </div>
+          <div class="col-4 price">
+            {{cells.10oz}}
+          </div>
+          <div class="col-5 price">
+            {{cells.16oz}}
+          </div>
+        </div>
+    </script>
   </div>
 
-  <script id="beer-menu" type="text/x-handlebars-template">
-      <div class="bol-table flex-display">
-        <div class="col-1 num">
-          {{cells.No}}
+  <div id="bol-menu-1" class="bol-menu">
+    <div class="flex-display header-row">
+      <h4 class="col-1 num">No.</h4>
+      <h4 class="col-2 beer">Beer</h4>
+      <h4 class="col-3 price">5 oz.</h4>
+      <h4 class="col-4 price">10 oz.</h4>
+      <h4 class="col-5 price">16 oz.</h4>
+    </div>
+
+    <script id="beer-menu" type="text/x-handlebars-template">
+        <div class="bol-table flex-display">
+          <div class="col-1 num">
+            {{cells.No}}
+          </div>
+          <div class="col-2 beer">
+            {{cells.Beer}}<br />
+            <h5>{{cells.Type}} {{cells.ABV}}</h5>
+          </div>
+          <div class="col-3 price">
+            {{cells.5oz}}
+          </div>
+          <div class="col-4 price">
+            {{cells.10oz}}
+          </div>
+          <div class="col-5 price">
+            {{cells.16oz}}
+          </div>
         </div>
-        <div class="col-2 beer">
-          {{cells.Beer}}<br />
-          <h5>{{cells.Type}} {{cells.ABV}}</h5>
+    </script>
+  </div>
+
+  <div id="bol-menu-2" class="bol-menu">
+    <div class="flex-display header-row">
+      <h4 class="col-1 num">No.</h4>
+      <h4 class="col-2 beer">Beer</h4>
+      <h4 class="col-3 price">5 oz.</h4>
+      <h4 class="col-4 price">10 oz.</h4>
+      <h4 class="col-5 price">16 oz.</h4>
+    </div>
+
+    <script id="beer-menu" type="text/x-handlebars-template">
+        <div class="bol-table flex-display">
+          <div class="col-1 num">
+            {{cells.No}}
+          </div>
+          <div class="col-2 beer">
+            {{cells.Beer}}<br />
+            <h5>{{cells.Type}} {{cells.ABV}}</h5>
+          </div>
+          <div class="col-3 price">
+            {{cells.5oz}}
+          </div>
+          <div class="col-4 price">
+            {{cells.10oz}}
+          </div>
+          <div class="col-5 price">
+            {{cells.16oz}}
+          </div>
         </div>
-        <div class="col-3 price">
-          {{cells.5oz}}
+    </script>
+  </div>
+
+  <div id="bol-menu-3" class="bol-menu">
+    <div class="flex-display header-row">
+      <h4 class="col-1 num">No.</h4>
+      <h4 class="col-2 beer">Beer</h4>
+      <h4 class="col-3 price">5 oz.</h4>
+      <h4 class="col-4 price">10 oz.</h4>
+      <h4 class="col-5 price">16 oz.</h4>
+    </div>
+
+    <script id="beer-menu" type="text/x-handlebars-template">
+        <div class="bol-table flex-display">
+          <div class="col-1 num">
+            {{cells.No}}
+          </div>
+          <div class="col-2 beer">
+            {{cells.Beer}}<br />
+            <h5>{{cells.Type}} {{cells.ABV}}</h5>
+          </div>
+          <div class="col-3 price">
+            {{cells.5oz}}
+          </div>
+          <div class="col-4 price">
+            {{cells.10oz}}
+          </div>
+          <div class="col-5 price">
+            {{cells.16oz}}
+          </div>
         </div>
-        <div class="col-4 price">
-          {{cells.10oz}}
-        </div>
-        <div class="col-5 price">
-          {{cells.16oz}}
-        </div>
-      </div>
-  </script>
+    </script>
+  </div>
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
