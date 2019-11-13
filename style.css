@@ -1,0 +1,75 @@
+body {
+  background-color: #114898;
+  background-image: url('resources/wallpaper.jpg');
+  background-size: 800px;
+  background-repeat: repeat;
+  font-family: 'Source Code Pro', monospace;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.bol-menu {
+  max-width: 600px;
+}
+.flex-display {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid white;
+  padding: 0;
+  margin: 0;
+  align-content: flex-start;
+  align-items: stretch;
+}
+.header-row {
+  background-color: #114898;
+  height: 30px;
+}
+.col-1 {
+  width: 30px;
+  padding 5;
+}
+.col-2 {
+  width: 320px;
+}
+.col-3 {
+  width: 65px;
+}
+.col-4 {
+  width: 65px;
+}
+.col-5 {
+  width: 65px;
+}
+.bol-table {
+  border: 1px solid white;
+  padding: 2px;
+}
+.bol-table:nth-child(even){
+  background: #114898;
+}
+.bol-table:nth-child(odd) {
+  background: #2765a8;
+}
+h4 {
+  font-family: 'Cabin Sketch', cursive;
+  font-size: 15px;
+}
+h5 {
+  font-weight: lighter;
+  padding: 0;
+  margin: 0;
+}
+.beer {
+  line-height: 18px;
+}
+.num{
+  text-align: center;
+}
+.price {
+  text-align: center;
+}
+.lowercase {
+  text-transform: lowercase;
+}
+.capitalize {
+  text-transform: capitalize;
+}

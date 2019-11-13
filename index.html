@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <title>Beer List</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sheetrock/1.1.4/dist/sheetrock.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch|Source+Code+Pro&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<div id="bol-menu" class="bol-menu">
+  <div class="flex-display header-row">
+    <h4 class="col-1">No.</h4>
+    <h4 class="col-2">Beer</h4>
+    <h4 class="col-3">5 oz.</h4>
+    <h4 class="col-4">10 oz.</h4>
+    <h4 class="col-5">16 oz.</h4>
+  </div>
+
+  <script id="beer-menu" type="text/x-handlebars-template">
+      <div class="bol-table flex-display">
+        <div class="col-1 num">
+          {{cells.No}}
+        </div>
+        <div class="col-2 beer">
+          {{cells.Beer}}<br />
+          <h5>{{cells.Type}} {{cells.ABV}}</h5>
+        </div>
+        <div class="col-3 price">
+          {{cells.5oz}}
+        </div>
+        <div class="col-4 price">
+          {{cells.10oz}}
+        </div>
+        <div class="col-5 price">
+          {{cells.16oz}}
+        </div>
+      </div>
+  </script>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
