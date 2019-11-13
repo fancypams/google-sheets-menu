@@ -1,24 +1,25 @@
 body {
   background-color: #114898;
   background-image: url('resources/wallpaper.jpg');
-  background-size: 850px;
+  background-size: 100%;
   background-repeat: repeat;
   font-family: 'Source Code Pro', monospace;
   color: #ffffff;
   text-transform: uppercase;
 }
 .menu-wrapper {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
   justify-content: center;
 }
 .bol-menu {
   margin: 10px;
   max-width: 100%;
 }
-.flex-display {
-  display: flex;
-  flex-direction: row;
+.table-display {
+  display: grid;
+  grid-template-areas:
+    "col-1 col-2 col-3 col-4 col-5";
   border: 1px solid white;
   padding: 0 0 0 0;
   align-content: flex-start;
@@ -31,18 +32,23 @@ body {
 }
 .col-1 {
   width: 30px;
+  grid-area: col-1;
 }
 .col-2 {
   width: 320px;
+  grid-area: col-2;
 }
 .col-3 {
   width: 65px;
+  grid-area: col-3;
 }
 .col-4 {
   width: 65px;
+  grid-area: col-4;
 }
 .col-5 {
   width: 65px;
+  grid-area: col-5;
 }
 .bol-table {
   border: 1px solid white;
@@ -81,6 +87,13 @@ h5 {
   text-transform: capitalize;
 }
 
-@media only screen and (max-width: 550px) {
-
+@media only screen and (max-width: 1000px) {
+  .menu-wrapper {
+    grid-template-columns: 100%;
+  }
+  .table-display {
+    grid-template-areas:
+      "col-1 col-2 col-2 col-2"
+      "empty col-3 col-4 col-5";
+  }
 }
