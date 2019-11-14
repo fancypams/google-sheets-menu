@@ -88,12 +88,24 @@ h5 {
 }
 
 @media only screen and (max-width: 1000px) {
+  body {
+      font-size: 25px;
+  }
+  h5 {
+    font-size: 15px;
+  }
   .menu-wrapper {
     grid-template-columns: 100%;
+  }
+  .num-title, .beer-title {
+    display: none;
   }
   .table-display {
     grid-template-areas:
       "col-1 col-2 col-2 col-2"
       "empty col-3 col-4 col-5";
+  }
+  .beer {
+    line-height: 22px;
   }
 }
