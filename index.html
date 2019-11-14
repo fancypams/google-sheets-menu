@@ -11,10 +11,62 @@
 </head>
 <body>
 <div class="menu-wrapper">
-  <div id="bol-menu" class="bol-menu">
-    <div class="header-row table-display">
-      <h4 class="col-1 num num-title">No.</h4>
-      <h4 class="col-2 beer beer-title">Beer</h4>
+  <div id="bol-menu" class="bol-menu beer-list">
+    <div class="table-display header-row">
+      <h4 class="col-1 num">No.</h4>
+      <h4 class="col-2 beer">Name + Description</h4>
+      <h4 class="col-3 price">5 oz.</h4>
+      <h4 class="col-4 price">10 oz.</h4>
+      <h4 class="col-5 price">16 oz.</h4>
+    </div>
+    <script id="beer-menu" type="text/x-handlebars-template">
+        <div class="bol-table table-display">
+          <div class="col-1 num">
+            {{cells.No}}
+          </div>
+          <div class="col-2 beer">
+            {{cells.Beer}}<br />
+            <h5>{{cells.Type}} {{cells.ABV}}</h5>
+          </div>
+          <div class="col-3 price">
+            {{cells.5oz}}
+          </div>
+          <div class="col-4 price">
+            {{cells.10oz}}
+          </div>
+          <div class="col-5 price">
+            {{cells.16oz}}
+          </div>
+        </div>
+    </script>
+  </div>
+  <div id="punch-menu" class="bol-menu punch-list">
+    <script id="draft-menu" type="text/x-handlebars-template">
+        <div class="alt-bol-table table-display">
+          <div class="col-1 num">
+            {{cells.No}}
+          </div>
+          <div class="col-2 beer">
+            {{cells.Beer}}<br />
+            <h5>{{cells.Type}} {{cells.ABV}}</h5>
+          </div>
+          <div class="col-3 price">
+            {{cells.5oz}}
+          </div>
+          <div class="col-4 price">
+            {{cells.10oz}}
+          </div>
+          <div class="col-5 price">
+            {{cells.16oz}}
+          </div>
+        </div>
+    </script>
+  </div>
+
+  <div id="bol-menu-1" class="bol-menu beer-list-1">
+    <div class="table-display header-row">
+      <h4 class="col-1 num">No.</h4>
+      <h4 class="col-2 beer">Name + Description</h4>
       <h4 class="col-3 price">5 oz.</h4>
       <h4 class="col-4 price">10 oz.</h4>
       <h4 class="col-5 price">16 oz.</h4>
@@ -41,10 +93,10 @@
     </script>
   </div>
 
-  <div id="bol-menu-1" class="bol-menu">
+  <div id="bol-menu-2" class="bol-menu beer-list-2">
     <div class="table-display header-row">
-      <h4 class="col-1 num num-title">No.</h4>
-      <h4 class="col-2 beer beer-title">Beer</h4>
+      <h4 class="col-1 num">No.</h4>
+      <h4 class="col-2 beer">Name + Description</h4>
       <h4 class="col-3 price">5 oz.</h4>
       <h4 class="col-4 price">10 oz.</h4>
       <h4 class="col-5 price">16 oz.</h4>
@@ -71,17 +123,17 @@
     </script>
   </div>
 
-  <div id="bol-menu-2" class="bol-menu">
+  <div id="bol-menu-3" class="bol-menu beer-list-3">
     <div class="table-display header-row">
-      <h4 class="col-1 num num-title">No.</h4>
-      <h4 class="col-2 beer beer-title">Beer</h4>
+      <h4 class="col-1 num">No.</h4>
+      <h4 class="col-2 beer">Name + Description</h4>
       <h4 class="col-3 price">5 oz.</h4>
       <h4 class="col-4 price">10 oz.</h4>
       <h4 class="col-5 price">16 oz.</h4>
     </div>
     <script id="beer-menu" type="text/x-handlebars-template">
         <div class="bol-table table-display">
-          <div class="col-1 num">
+          <div class="col col-1 num">
             {{cells.No}}
           </div>
           <div class="col-2 beer">
@@ -100,17 +152,9 @@
         </div>
     </script>
   </div>
-
-  <div id="bol-menu-3" class="bol-menu">
-    <div class="table-display header-row">
-      <h4 class="col-1 num num-title">No.</h4>
-      <h4 class="col-2 beer beer-title">Beer</h4>
-      <h4 class="col-3 price">5 oz.</h4>
-      <h4 class="col-4 price">10 oz.</h4>
-      <h4 class="col-5 price">16 oz.</h4>
-    </div>
-    <script id="beer-menu" type="text/x-handlebars-template">
-        <div class="bol-table table-display">
+  <div id="wine-menu" class="bol-menu wine-list">
+    <script id="wino-menu" type="text/x-handlebars-template">
+        <div class="alt-bol-table table-display">
           <div class="col-1 num">
             {{cells.No}}
           </div>
