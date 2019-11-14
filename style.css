@@ -16,6 +16,8 @@ body {
 .menu-wrapper {
   display: grid;
   justify-content: center;
+  grid-column-gap: 10px;
+  grid-column: auto;
   grid-template-areas:
     "beer-list beer-list-1"
     "punch-list beer-list-1"
@@ -145,6 +147,23 @@ h5 {
   text-transform: capitalize;
 }
 
+@media only screen and (max-width: 1250px) {
+  .menu-wrapper {
+    grid-template-columns: 100%;
+    grid-template-areas:
+      "beer-list"
+      "punch-list"
+      "beer-list-1"
+      "beer-list-2"
+      "beer-list-3"
+      "wine-list";
+  }
+  .table-display {
+    grid-template-areas:
+      "col-1 col-2 col-3 col-4 col-5";
+  }
+}
+
 @media only screen and (max-width: 700px) {
   body {
       font-size: 25px;
@@ -165,33 +184,30 @@ h5 {
       "beer-list-3"
       "wine-list";
   }
-  .header-row {
-    display: none;
-  }
   .table-display {
     grid-template-areas:
       "col-1 col-2 col-2 col-2"
-      "empty col-3 col-4 col-5";
+      "col-1 col-3 col-4 col-5";
   }
   .beer {
     line-height: 22px;
   }
+  .header-row .price {
+    display: none;
+  }
+  .header-row .beer {
+    margin-top: -10px;
+  }
   .col-1 {
-    height: 70px;
-    line-height: 70px;
+    height: auto;
+    line-height: 110px;
     vertical-align: middle;
-    width: 80px;
-    padding-top: 20px;
-    margin-bottom: -40px;
+    width: 50px;
   }
   .col-2 {
-    padding-top: 5px;
+    padding-top: 10px;
   }
-  .col-3 {
-    padding-left: 5px;
-    margin-left: -3px;
-  }
-  .col-5, .col-4 {
+  .col-3, .col-4, .col-5 {
     border-left: none;
   }
 }
